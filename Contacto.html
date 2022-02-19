@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contacto</title>
     <!--ICON-->
-    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon" />
+    <link rel="shortcut icon" href="img/logo.camara.png" type="image/x-icon" />
     <!--CSS-->
     <link rel="stylesheet" href="css/style.css" />
     <!--GOOGLE FONTS-->
@@ -25,108 +25,100 @@
     <header>
       <div class="container">
         <div class="row">
-          <a href="index.html">
-            <img src="img/logo.png" alt="Logo" height="60 px"
-          /></a>
-          <nav class="nav">
-            <ul>
-              <li class="nav_item">
-                <a class="nav_link" href="index.html">inicio</a>
-              </li>
-              <li class="nav_item">
-                <a class="nav_link" href="Portfolio.html">portfolio</a>
-              </li>
-              <li class="nav_item">
-                <a class="nav_link" href="Proyectos.html">proyectos</a>
-                <ul>
-                  <li><a href="">subitem</a></li>
-                  <li><a href="">subitem</a></li>
-                </ul>
-              </li>
-              <li class="nav_item">
-                <a class="nav_link" href="SobreMi.html">sobre mi</a>
-              </li>
-              <li class="nav_item">
-                <a class="nav_link" href="Fotografia.html">fotografía</a>
-              </li>
-              <li class="nav_item">
-                <a class="nav_link" href="Contacto.html">contacto</a>
-              </li>
-              <li>
-                <a href="https://www.instagram.com/micatiferes/" target="blank">
-                  <img
-                    class="redes"
-                    src="img/ig.png"
-                    alt="Instagram"
-                    height="35px"
-                  />
-                </a>
-              </li>
-              <li>
-                <a href="https://www.behance.net/micaelatiferes" target="blank">
-                  <img
-                    class="redes"
-                    src="img/be.png"
-                    alt="Behance"
-                    height="35px"
-                  />
-                </a>
-              </li>
-            </ul>
-          </nav>
-        </div>
-      </div>
-    </header>
+      <a href="index.html">
+        <img class="logo" src="img/logo.camara.png" alt="Logo" height="120 px"/></a>
+      <nav class="nav">
+        <ul>
+          <li class="nav_item"> <a class="nav_link" href="index.html">inicio</a></li>
+          <li class="nav_item"><a class="nav_link" href="Portfolio.html">portfolio</a></li>
+          <li class="nav_item"><a class="nav_link" href="Redes.html">redes sociales</a>
+          <ul>
+            <li><a href="">subitem</a></li>
+            <li><a href="">subitem</a></li>
+          </ul>
+          </li>
+          <li class="nav_item"><a class="nav_link" href="Fotografia.html">fotografía</a></li>
+          <li class="nav_item"><a class="nav_link" href="SobreMi.html">sobre mi</a></li>
+          <li class="nav_item"><a class="nav_link" href="Contacto.html">contacto</a></li>
+          <li><a href="https://www.instagram.com/micatiferes/" target="blank">
+            <img class="redes" src="img/ig.png" alt="Instagram" height="35px">
+          </a></li>
+          <li><a href="https://www.behance.net/micaelatiferes" target="blank">
+            <img class="redes" src="img/be.png" alt="Behance" height="35px">
+          </a></li>
+        </ul>
+      </nav>
+    </div>
+    </div>
+    </header> 
 
     <div class="container">
       <h1 class="titulodeContacto">Contacto</h1>
         <fieldset class="formulario">
-          <legend>Mi formulairo</legend>
+          <!-- <legend>Mi formulairo</legend> -->
 
-          <div>
+          <div class="form_input">
             <label for="Nombre">Nombre</label>
             <input type="text" name="Nombre" id="Nombre" />
           </div>
           
-          <div>
+          <div class="form_input">
             <label for="Apellido">Apellido</label>
             <input type="text" name="Apellido" id="Apellido" />
           </div>
           
-          <div>
+          <div class="form_input">
             <label for="Mail">E-Mail</label>
             <input type="text" name="Mail" id="Mail" />
           </div>
           <br />
           
           <div class="genero">
-            <input type="radio" name="genero" value="Hombre" class="radio" /><div>Hombre</div>
-            <input type="radio" name="genero" value="Mujer" class="radio" /><div>Mujer</div>
-            <input type="radio" name="genero" value="No binarix" class="radio" /><div>No binario</div>
+            <label for="genero">Género: </label>
+            <input type="radio" name="genero" value="Hombre" class="radio" /><label>Hombre</label>
+            <input type="radio" name="genero" value="Mujer" class="radio" /><label>Mujer</label>
+            <input type="radio" name="genero" value="No binarix" class="radio" /><label>No binario</label>
           </div>
 
-          
-          <input type="Checkbox" name="Acepta" value="1" /><div>¿Acepta los terminos y condiciones?</div>
+          <div>
+            <input type="Checkbox" name="Acepta" value="1" />
+            <label>¿Acepta los terminos y condiciones?</label>
+          </div>
 
-          <br />
-          <label for="Talles">Seleccione un talle de remera</label>
-          <select name="Talles" id="Talles">
-            <option value="L">Large</option>
-            <option value="M">Medium</option>
-            <option value="S">Small</option>
-          </select>
+          <div class="form_input">
+            <label for="Talles">Seleccione un talle de remera</label>
+            <select name="Talles" id="Talles">
+              <option value="L">Large</option>
+              <option value="M">Medium</option>
+              <option value="S">Small</option>
+            </select>
+          </div>
 
-          <br />
-          <label for="Mensaje">Mensaje:</label>
-          <br />
-          <textarea name="Mensaje" id="Mensaje" cols="30" rows="10"></textarea>
+          <div class="form_input">
+            <label for="Mensaje">Mensaje:</label>
+            <textarea name="Mensaje" id="Mensaje" cols="30" rows="10"></textarea>
+          </div>
 
-          <br />
           <input class="enviarformulario" type="Submit" value="Enviar formulario" />
-          <br>
           <input class="reset" type="Reset" name="" id="Borrar formulario" />
         </fieldset>
       </form>
     </div>
+
+    <footer class="footer">
+      <ul>
+        <div class="container">
+        <li class="footer_li"><a class="footer_li" href="Contacto.html">contacto</a></li>
+        <li class="footer_li">celular</li>
+        <li class="footer_li">mail</li>
+        <li class="footer_li"><a class="footer_li" href="https://www.linkedin.com/feed/" target="blank">linked in</li></a>
+        <li><a href="https://www.instagram.com/micatiferes/" target="blank">
+          <img class="redes" src="img/ig.white.png" alt="Instagram" height="35px">
+        </a></li>
+        <li><a href="https://www.behance.net/micaelatiferes" target="blank">
+          <img class="redes" src="img/be.white.png" alt="Behance" height="35px">
+      </div>
+    </footer>
+    
   </body>
 </html>

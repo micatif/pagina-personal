@@ -2,6 +2,7 @@
   margin: 0%;
   padding: 0%;
   box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
 }
 
 img {
@@ -24,6 +25,7 @@ body {
   justify-content: space-between;
 }
 
+/* ESTILOS DE HEADER */
 header {
   background: none;
   padding: 0.5rem 0;
@@ -33,7 +35,7 @@ header {
 }
 
 .nombre {
-  margin: 1rem 0rem;
+  margin: 0.5rem 0rem;
   padding: 0rem;
   max-width: 300px;
 }
@@ -50,13 +52,14 @@ header {
 }
 
 .nav_item {
-  margin: 0 0 0 1.5rem;
+  margin: 0 1.2rem;
 }
 
 .nav_link {
   /*text-transform: uppercase;*/
   color: #372086;
   text-decoration: none;
+  font-weight: bold;
 }
 
 .nav_link:hover {
@@ -157,9 +160,11 @@ ul ul li a {
 .footer {
   padding-top: 1rem;
   /*background-color: #372086;*/
-  background: linear-gradient(to bottom, #d8def7, #372086);
+  background: linear-gradient(to bottom, #c6b7f5, #372086);
   width: 100%;
   padding: 3rem;
+  position: sticky;
+  bottom: 0;
 }
 
 .footer_li {
@@ -168,82 +173,91 @@ ul ul li a {
   text-decoration: none;
 }
 
-/*ESTILOS DE PORTFOLIO*/
-.titulodePortfolio {
-  color: #372086;
-  padding: 2rem 0rem 1rem 0rem;
-}
-
-table {
-  border: 4px solid #372086;
-  border-radius: 10px 10px 10px 10px;
-}
-
-.espaciodetabla,
-table td {
-  padding: 1rem;
-}
-
+/* ESTILOS GRID */
 .grid-container {
   padding: 20px;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-auto-rows: minmax(100px, auto);
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: minmax(150px, auto);
   grid-gap: 20px;
   align-content: space-between;
 }
 .uno {
   grid-column: 1;
-  grid-row: 1;
+  grid-row: 1 / 4;
 }
 .dos {
-  grid-column: 2 / 4;
-  grid-row: 1 / 3;
+  grid-column: 2;
+  grid-row: 1/4;
 }
 .tres {
   grid-column: 1;
-  grid-row: 2 / 5;
+  grid-row: 4/7;
 }
 .cuatro {
-  grid-column: 3;
-  grid-row: 3;
+  grid-column: 1;
+  grid-row: 7/11;
 }
 .cinco {
   grid-column: 2;
-  grid-row: 3/5;
+  grid-row: 4/7;
 }
 .seis {
-  grid-column: 3;
-  grid-row: 4;
+  grid-column: 2;
+  grid-row: 7/11;
 }
 
-.item {
+/* .item {
   background-color: #d8def7;
   border: 4px solid #372086;
   border-radius: 10px 10px 10px 10px;
+} */
+
+/*ESTILOS DE PORTFOLIO*/
+.titulodePortfolio {
+  color: #372086;
+  padding: 0rem 0rem 1rem 0rem;
 }
 
-/*ESTILOS DE PROYECTOS*/
-.titulodeproyectos {
-  color: #372086;
-  padding: 2rem 0rem 1rem 0rem;
+table {
+  /* border: 4px solid #372086; */
+  border-radius: 10px 10px 10px 10px;
+  width: 100%;
+}
+.multimedia_tabla {
+  width: 50%;
+}
+
+.espaciodetabla,
+table td {
+  padding: 1rem;
+  text-align: center;
+  font-size: 18px;
 }
 
 .descripcionVideo {
   color: #372086;
   font-weight: 300;
-  padding: 20px 0px;
+  padding: 10px 0px;
+  font-size: 18px;
+}
+
+/*ESTILOS DE REDES*/
+.tituloderedes {
+  color: #372086;
+  padding: 0rem 0rem 1rem 0rem;
 }
 
 /*ESTILOS DE SOBRE MI*/
 .titulodeSobremi {
   color: #372086;
+  font-size: 2em;
 }
 
 .yo {
   margin: 2rem 0rem 2rem 0rem;
   padding: 1rem;
-  background: linear-gradient(to top, #d8def7, #372086);
+  background: linear-gradient(to top, #c6b7f5, #372086);
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -261,29 +275,51 @@ table td {
 /*ESTILOS DE FOTOGRAFÍA*/
 .titulodeFotografia {
   color: #372086;
-  padding: 1rem 1rem 0rem 0rem;
+  padding: 0rem 0rem 1rem 0rem;
 }
 
 .tresfotos {
   display: flex;
   align-items: stretch;
-  justify-content: flex-start;
+  justify-content: center;
 }
 
 .fotos {
   /*  padding: 2rem; */
   padding: 1rem 1rem 0rem 0rem;
+  width: 500px;
+  object-fit: cover;
 }
 
 .fotos:hover {
   opacity: 80%;
-  transition: all 0.3s ease;
+  transition: opacity 0.2s, visibility 0.2s;
+}
+
+.img_wrap {
+  position: relative;
+}
+
+.img_descripcion {
+  position: absolute;
+  bottom: 0;
+  color: white;
+  visibility: hidden;
+  opacity: 0;
+  margin: 2rem;
+  /* transition effect. not necessary */
+  transition: opacity 0.2s, visibility 0.2s;
+  font-weight: bold;
+}
+.img_wrap:hover .img_descripcion {
+  visibility: visible;
+  opacity: 1;
 }
 
 /*ESTILOS DE CONTACTO*/
 .titulodeContacto {
   color: #372086;
-  padding: 2rem 0rem;
+  padding: 0rem 0rem 1rem 0rem;
 }
 
 .formulario {
@@ -293,31 +329,51 @@ table td {
   align-items: flex-start;
   border: none;
   overflow: hidden;
+  margin: 0 auto;
+  align-items: center;
 }
 
 .formulario div {
   margin: 8px 0px;
+  width: 40%;
+}
+
+.form_input {
+  display: flex;
+  justify-content: space-between;
+}
+.form_input input,
+#Talles,
+#Mensaje {
+  line-height: 25px;
+  width: 80%;
 }
 
 .enviarformulario {
   padding: 10px 50px;
   border: none;
-  background: linear-gradient(to right #372086, #d8def7);
+  background: linear-gradient(to bottom, #372086, #c6b7f5);
+  color: white;
+  margin: 10px;
 }
 
 .reset {
   padding: 10px 50px;
   border: none;
-  background: linear-gradient(to right #372086, #d8def7);
+  background: linear-gradient(to bottom, #372086, #c6b7f5);
+  color: white;
+  margin: 10px;
 }
 
 .genero {
   display: flex;
   flex-direction: row;
 }
-
+.genero label {
+  margin: 8px 0px;
+}
 .radio {
-  flex-direction: row;
+  margin: 8px 10px 8px 80px;
 }
 
 /*ANIMACIONES*/
