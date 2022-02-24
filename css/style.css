@@ -25,78 +25,17 @@ body {
   justify-content: space-between;
 }
 
-/* ESTILOS DE HEADER */
+/* HEADER */
 header {
-  background: none;
   padding: 0.5rem 0;
   position: sticky;
   top: 0;
-  z-index: 1;
 }
 
 .nombre {
   margin: 0.5rem 0rem;
   padding: 0rem;
   max-width: 300px;
-}
-
-.img_index {
-  margin: 1rem 0rem;
-  padding: 2rem 0rem;
-}
-
-.nav {
-  display: flex;
-  justify-content: flex-end;
-  justify-content: space-between 50px;
-}
-
-.nav_item {
-  margin: 0 1.2rem;
-}
-
-.nav_link {
-  /*text-transform: uppercase;*/
-  color: #372086;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-.nav_link:hover {
-  opacity: 0.65;
-}
-
-ul {
-  list-style: none;
-  font-size: 0;
-  max-width: 1320px;
-}
-
-li {
-  display: inline-block;
-  margin: 0px 10px;
-  position: relative;
-  font-size: 14px;
-}
-
-ul ul {
-  position: absolute;
-  display: none;
-}
-
-ul li:hover ul {
-  display: block;
-}
-
-ul ul li a {
-  text-decoration: none;
-  /*text-transform: uppercase;*/
-}
-
-.titulodelapagina {
-  color: #372086;
-  font-weight: 700;
-  font-size: 2rem;
 }
 
 .bienvenidxs {
@@ -107,14 +46,9 @@ ul ul li a {
 
 .parrafoPagina {
   color: #372086;
-  line-height: 1.5;
   font-weight: 400;
   margin-top: 1rem;
-}
-
-.redes {
-  padding-top: 1rem;
-  padding-left: 1rem;
+  margin-bottom: 0rem;
 }
 
 .redes:hover {
@@ -122,96 +56,55 @@ ul ul li a {
   transition: all 0.3s ease;
 }
 
-.descripcion {
-  font-size: 25px;
-  font-weight: 400;
-  color: #372086;
+/* NAVBAR */
+.navbar-brand img {
+  height: 100px;
 }
 
-.logo:hover {
-  opacity: 80%;
-  transition: all 0.3s ease;
+.nav-link {
+  color: #372086 !important;
+  text-decoration: none;
+  font-weight: bold;
+  padding-right: 2.5rem;
 }
 
-.trabajos {
-  padding-bottom: 2rem;
-}
-.trabajo1 {
-  display: flex;
-  align-items: center;
+#navbarDropdown {
+  font-size: medium;
 }
 
-.trabajo2 {
-  display: flex;
-  align-items: center;
+.navbar-light .navbar-toggler {
+  color: #372086 !important;
+  border-color: #372086 !important;
 }
 
-.editorial {
-  color: #372086;
-  padding: 1rem;
+.redes {
+  padding-top: 0.3rem;
+  padding-left: 2rem;
 }
 
-.catedra {
-  color: #372086;
-  padding-left: 1rem;
+.navbar-collapse {
+  justify-content: flex-end;
+  text-align: right;
+}
+
+.navbar-expand-md .navbar-nav .nav-link {
+  padding-right: 2rem !important;
 }
 
 /*ESTILOS DE FOOTER*/
 .footer {
-  padding-top: 1rem;
-  /*background-color: #372086;*/
   background: linear-gradient(to bottom, #c6b7f5, #372086);
   width: 100%;
-  padding: 3rem;
   position: sticky;
   bottom: 0;
+  height: 100px;
 }
 
 .footer_li {
   color: white;
-  /*text-transform: uppercase;*/
   text-decoration: none;
+  text-align: center;
 }
-
-/* ESTILOS GRID */
-.grid-container {
-  padding: 20px;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-auto-rows: minmax(150px, auto);
-  grid-gap: 20px;
-  align-content: space-between;
-}
-.uno {
-  grid-column: 1;
-  grid-row: 1 / 4;
-}
-.dos {
-  grid-column: 2;
-  grid-row: 1/4;
-}
-.tres {
-  grid-column: 1;
-  grid-row: 4/7;
-}
-.cuatro {
-  grid-column: 1;
-  grid-row: 7/11;
-}
-.cinco {
-  grid-column: 2;
-  grid-row: 4/7;
-}
-.seis {
-  grid-column: 2;
-  grid-row: 7/11;
-}
-
-/* .item {
-  background-color: #d8def7;
-  border: 4px solid #372086;
-  border-radius: 10px 10px 10px 10px;
-} */
 
 /*ESTILOS DE PORTFOLIO*/
 .titulodePortfolio {
@@ -220,12 +113,7 @@ ul ul li a {
 }
 
 table {
-  /* border: 4px solid #372086; */
-  border-radius: 10px 10px 10px 10px;
   width: 100%;
-}
-.multimedia_tabla {
-  width: 50%;
 }
 
 .espaciodetabla,
@@ -268,7 +156,6 @@ table td {
 }
 
 .seccion div {
-  width: 40%;
   margin: 50px;
 }
 
@@ -278,48 +165,19 @@ table td {
   padding: 0rem 0rem 1rem 0rem;
 }
 
-.tresfotos {
-  display: flex;
-  align-items: stretch;
-  justify-content: center;
-}
-
-.fotos {
-  /*  padding: 2rem; */
-  padding: 1rem 1rem 0rem 0rem;
-  width: 500px;
-  object-fit: cover;
-}
-
-.fotos:hover {
-  opacity: 80%;
-  transition: opacity 0.2s, visibility 0.2s;
-}
-
-.img_wrap {
-  position: relative;
-}
-
-.img_descripcion {
-  position: absolute;
-  bottom: 0;
-  color: white;
-  visibility: hidden;
-  opacity: 0;
-  margin: 2rem;
-  /* transition effect. not necessary */
-  transition: opacity 0.2s, visibility 0.2s;
-  font-weight: bold;
-}
-.img_wrap:hover .img_descripcion {
-  visibility: visible;
-  opacity: 1;
-}
-
 /*ESTILOS DE CONTACTO*/
 .titulodeContacto {
   color: #372086;
   padding: 0rem 0rem 1rem 0rem;
+}
+
+/* CONTACTO */
+.btn {
+  color: white !important;
+  padding: 10px 50px;
+  border: none;
+  background: linear-gradient(to bottom, #372086, #c6b7f5);
+  margin: 10px;
 }
 
 .formulario {
@@ -349,22 +207,6 @@ table td {
   width: 80%;
 }
 
-.enviarformulario {
-  padding: 10px 50px;
-  border: none;
-  background: linear-gradient(to bottom, #372086, #c6b7f5);
-  color: white;
-  margin: 10px;
-}
-
-.reset {
-  padding: 10px 50px;
-  border: none;
-  background: linear-gradient(to bottom, #372086, #c6b7f5);
-  color: white;
-  margin: 10px;
-}
-
 .genero {
   display: flex;
   flex-direction: row;
@@ -377,7 +219,6 @@ table td {
 }
 
 /*ANIMACIONES*/
-
 @keyframes from-right {
   0% {
     opacity: 0;
