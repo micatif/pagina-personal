@@ -1,0 +1,115 @@
+@import "index";
+@import "redes";
+@import "contacto";
+@import "portfolio";
+@import "fotografia";
+@import "sobreMi";
+
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* HEADER */
+header {
+  padding: 0.5rem 0;
+  position: sticky;
+  top: 0;
+}
+
+.nombre {
+  margin: 0.5rem 0rem;
+  padding: 0rem;
+  max-width: 300px;
+}
+
+.bienvenidxs {
+  color: #372086;
+  font-weight: 500;
+  margin-top: 0.5rem;
+}
+
+.parrafoPagina {
+  color: #372086;
+  font-weight: 400;
+  margin-top: 1rem;
+  margin-bottom: 0rem;
+}
+
+.redes:hover {
+  opacity: 50%;
+  transition: all 0.3s ease;
+}
+
+/* NAVBAR */
+.navbar-brand img {
+  height: 100px;
+}
+
+.nav-link {
+  color: #372086 !important;
+  text-decoration: none;
+  font-weight: bold;
+  padding-right: 2.5rem;
+}
+
+#navbarDropdown {
+  font-size: medium;
+}
+
+.navbar-light .navbar-toggler {
+  color: #372086 !important;
+  border-color: #372086 !important;
+}
+
+.redes {
+  padding-top: 0.3rem;
+  padding-left: 2rem;
+}
+
+.navbar-collapse {
+  justify-content: flex-end;
+  text-align: right;
+}
+
+.navbar-expand-md .navbar-nav .nav-link {
+  padding-right: 2rem !important;
+}
+
+/*ESTILOS DE FOOTER*/
+.footer {
+  background: linear-gradient(to bottom, #c6b7f5, #372086);
+  width: 100%;
+  position: sticky;
+  bottom: 0;
+  height: 100px;
+  margin-top: 20px;
+}
+
+.footer_li {
+  color: white;
+  text-decoration: none;
+  text-align: center;
+}
+
+/*ANIMACIONES*/
+@keyframes from-right {
+  0% {
+    opacity: 0;
+    transform: translateX(80px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+.nombre {
+  animation: from-right 1.5s ease;
+}

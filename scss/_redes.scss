@@ -1,0 +1,26 @@
+/*ESTILOS DE REDES*/
+.tituloderedes {
+  color: #372086;
+  padding: 0rem 0rem 1rem 0rem;
+}
+
+.btn {
+  height: 5rem;
+  width: 100%;
+  margin: 10px;
+  background-color: #9a6bcf !important;
+  .btn__text {
+    line-height: 4rem;
+    vertical-align: middle;
+    padding: 1px;
+    color: white;
+  }
+}
+
+$redes: (/*Declaramos nuestro mapa*/ instagram: #ce1965, behance: #173e92);
+
+@each $red, $color in $redes {
+  .btn--#{$red} {
+    background: linear-gradient(0.25turn, $color, #9a6bcf);
+  }
+}

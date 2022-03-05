@@ -1,0 +1,22 @@
+/*ESTILOS DE SOBRE MI*/
+.titulodeSobremi {
+  color: #372086;
+  font-size: 2em;
+}
+
+.yo {
+  margin: 2rem 0rem 2rem 0rem;
+  padding: 1rem;
+  background: linear-gradient(to top, #c6b7f5, #372086);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.seccion {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.seccion div {
+  margin: 50px;
+}
