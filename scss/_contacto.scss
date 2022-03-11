@@ -4,14 +4,6 @@
   padding: 0rem 0rem 1rem 0rem;
 }
 
-.btn-default {
-  color: white !important;
-  padding: 10px 50px;
-  border: none;
-  background: linear-gradient(to bottom, #372086, #c6b7f5);
-  margin: 10px;
-}
-
 .formulario {
   display: flex;
   flex-direction: column;
@@ -52,4 +44,10 @@
 
 .radio {
   margin: 8px 10px 8px 80px;
+}
+
+.btn-primary {
+  border: none !important;
+  color: white !important;
+  background: linear-gradient(0.25turn, #e2d7fa, #372086) !important;
 }

@@ -1,4 +1,5 @@
 @charset "UTF-8";
+/* VARIABLES */
 /*ESTILOS DE INDEX*/
 body {
   font-family: "Raleway", sans-serif;
@@ -19,6 +20,23 @@ body {
           justify-content: space-between;
 }
 
+.navbar-toggler {
+  color: #372086 !important;
+  border-color: #372086 !important;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+#navbarSupportedContent {
+  color: black;
+}
+
+.bienvenidxs {
+  color: #372086;
+}
+
 /*ESTILOS DE REDES*/
 .tituloderedes {
   color: #372086;
@@ -29,7 +47,7 @@ body {
   height: 5rem;
   width: 100%;
   margin: 10px;
-  background-color: #9a6bcf !important;
+  background-color: #e2d7fa !important;
 }
 
 .btn .btn__text {
@@ -40,28 +58,14 @@ body {
 }
 
 .btn--instagram {
-  background: -webkit-gradient(linear, left top, right top, from(#ce1965), to(#9a6bcf));
-  background: linear-gradient(0.25turn, #ce1965, #9a6bcf);
-}
-
-.btn--behance {
-  background: -webkit-gradient(linear, left top, right top, from(#173e92), to(#9a6bcf));
-  background: linear-gradient(0.25turn, #173e92, #9a6bcf);
+  background: -webkit-gradient(linear, left top, right top, from(#e2d7fa), to(#372086));
+  background: linear-gradient(0.25turn, #e2d7fa, #372086);
 }
 
 /*ESTILOS DE CONTACTO*/
 .titulodeContacto {
   color: #372086;
   padding: 0rem 0rem 1rem 0rem;
-}
-
-.btn-default {
-  color: white !important;
-  padding: 10px 50px;
-  border: none;
-  background: -webkit-gradient(linear, left top, left bottom, from(#372086), to(#c6b7f5));
-  background: linear-gradient(to bottom, #372086, #c6b7f5);
-  margin: 10px;
 }
 
 .formulario {
@@ -129,14 +133,17 @@ body {
   margin: 8px 10px 8px 80px;
 }
 
+.btn-primary {
+  border: none !important;
+  color: white !important;
+  background: -webkit-gradient(linear, left top, right top, from(#e2d7fa), to(#372086)) !important;
+  background: linear-gradient(0.25turn, #e2d7fa, #372086) !important;
+}
+
 /*ESTILOS DE PORTFOLIO*/
 .titulodePortfolio {
   color: #372086;
-  padding: 0rem 0rem 1rem 0rem;
-}
-
-table {
-  width: 100%;
+  padding-bottom: 0.5rem;
 }
 
 .espaciodetabla,
@@ -146,11 +153,16 @@ table td {
   font-size: 18px;
 }
 
-.descripcionVideo {
-  color: #372086;
-  font-weight: 300;
-  padding: 10px 0px;
-  font-size: 18px;
+.experiencia {
+  padding-bottom: 2rem;
+}
+
+.img-responsive {
+  padding: 1rem 0;
+}
+
+.embalaje {
+  padding: 0 !important;
 }
 
 /*ESTILOS DE FOTOGRAFÍA*/
@@ -160,16 +172,17 @@ table td {
 }
 
 /*ESTILOS DE SOBRE MI*/
-.titulodeSobremi {
+.titulodeSobremi,
+.parrafoodeSobremi {
   color: #372086;
-  font-size: 2em;
+  padding-left: 2rem;
 }
 
 .yo {
-  margin: 2rem 0rem 2rem 0rem;
+  margin: 0rem 2rem 2rem 0rem;
   padding: 1rem;
-  background: -webkit-gradient(linear, left bottom, left top, from(#c6b7f5), to(#372086));
-  background: linear-gradient(to top, #c6b7f5, #372086);
+  background: -webkit-gradient(linear, left bottom, left top, from(#e2d7fa), to(#372086));
+  background: linear-gradient(to top, #e2d7fa, #372086);
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -183,8 +196,20 @@ table td {
           justify-content: flex-start;
 }
 
-.seccion div {
-  margin: 50px;
+/*ESTILOS DE ILUSTRACIONES*/
+.titulodeilustracion {
+  color: #372086;
+  padding-bottom: 0.5rem;
+}
+
+.row {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.img-responsive {
+  padding-bottom: 2rem;
 }
 
 * {
@@ -248,14 +273,9 @@ header {
   font-size: medium;
 }
 
-.navbar-light .navbar-toggler {
-  color: #372086 !important;
-  border-color: #372086 !important;
-}
-
 .redes {
   padding-top: 0.3rem;
-  padding-left: 2rem;
+  padding-left: 3rem;
 }
 
 .navbar-collapse {
@@ -266,13 +286,17 @@ header {
 }
 
 .navbar-expand-md .navbar-nav .nav-link {
-  padding-right: 2rem !important;
+  padding-left: 3rem !important;
+}
+
+.nav-custom {
+  background: white;
 }
 
 /*ESTILOS DE FOOTER*/
 .footer {
-  background: -webkit-gradient(linear, left top, left bottom, from(#c6b7f5), to(#372086));
-  background: linear-gradient(to bottom, #c6b7f5, #372086);
+  background: -webkit-gradient(linear, left top, left bottom, from(#e2d7fa), to(#372086));
+  background: linear-gradient(to bottom, #e2d7fa, #372086);
   width: 100%;
   position: -webkit-sticky;
   position: sticky;

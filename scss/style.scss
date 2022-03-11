@@ -1,9 +1,11 @@
+@import "variables";
 @import "index";
 @import "redes";
 @import "contacto";
 @import "portfolio";
 @import "fotografia";
 @import "sobreMi";
+@import "ilustraciones";
 
 * {
   margin: 0%;
@@ -30,13 +32,13 @@ header {
 }
 
 .bienvenidxs {
-  color: #372086;
+  color: $miAzul;
   font-weight: 500;
   margin-top: 0.5rem;
 }
 
 .parrafoPagina {
-  color: #372086;
+  color: $miAzul;
   font-weight: 400;
   margin-top: 1rem;
   margin-bottom: 0rem;
@@ -53,7 +55,7 @@ header {
 }
 
 .nav-link {
-  color: #372086 !important;
+  color: $miAzul !important;
   text-decoration: none;
   font-weight: bold;
   padding-right: 2.5rem;
@@ -63,14 +65,9 @@ header {
   font-size: medium;
 }
 
-.navbar-light .navbar-toggler {
-  color: #372086 !important;
-  border-color: #372086 !important;
-}
-
 .redes {
   padding-top: 0.3rem;
-  padding-left: 2rem;
+  padding-left: 3rem;
 }
 
 .navbar-collapse {
@@ -79,12 +76,16 @@ header {
 }
 
 .navbar-expand-md .navbar-nav .nav-link {
-  padding-right: 2rem !important;
+  padding-left: 3rem !important;
+}
+
+.nav-custom {
+  background: white;
 }
 
 /*ESTILOS DE FOOTER*/
 .footer {
-  background: linear-gradient(to bottom, #c6b7f5, #372086);
+  background: linear-gradient(to bottom, $miLila, $miAzul);
   width: 100%;
   position: sticky;
   bottom: 0;

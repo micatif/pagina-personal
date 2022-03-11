@@ -1,11 +1,7 @@
 /*ESTILOS DE PORTFOLIO*/
 .titulodePortfolio {
   color: #372086;
-  padding: 0rem 0rem 1rem 0rem;
-}
-
-table {
-  width: 100%;
+  padding-bottom: 0.5rem;
 }
 
 .espaciodetabla,
@@ -15,9 +11,14 @@ table td {
   font-size: 18px;
 }
 
-.descripcionVideo {
-  color: #372086;
-  font-weight: 300;
-  padding: 10px 0px;
-  font-size: 18px;
+.experiencia {
+  padding-bottom: 2rem;
+}
+
+.img-responsive {
+  padding: 1rem 0;
+}
+
+.embalaje {
+  padding: 0 !important;
 }

@@ -37,10 +37,10 @@
 
   <body>
     <header>
-			<nav class="navbar navbar-expand-md navbar-light">
+			<nav class="navbar navbar-expand-md nav-custom">
 				<div class="container">
 					<a class="navbar-brand" href="index.html">
-						<img src="img/logo.camara.png" alt="inicio">
+						<img src="img/logo.camara2.png" alt="inicio">
 					</a>
 					<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
 						<span class="navbar-toggler-icon"></span>
@@ -53,10 +53,10 @@
 										portfolio
 									</a>
 									<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+										<li><a class="nav-link" href="Portfolio.html">portfolio</a></li>
 										<li><a class="nav-link" href="Fotografia.html">fotografía</a></li>
 										<li><a class="nav-link" href="Redes.html">redes sociales</a></li>
-										<li><a class="nav-link" href="#">ilustraciones</a></li>
-										<li><a class="nav-link" href="Portfolio.html">portfolio</a></li>
+										<li><a class="nav-link" href="Ilustraciones.html">ilustraciones</a></li>
 									</ul>
 								</li>
                 <a class="nav-link" href="SobreMi.html">sobre mi</a>
@@ -81,12 +81,11 @@
 					</div>
 				</div>
 			</nav>
-    </header>
+    </header> 
 
-    <div class="container">
-      <h1 class="titulodeContacto">Contacto</h1>
+    <!-- <div class="container">
+
         <fieldset class="formulario">
-          <!-- <legend>Mi formulairo</legend> -->
 
           <div class="form_input">
             <label for="Nombre">Nombre</label>
@@ -133,7 +132,42 @@
           <input class="btn-default" type="Reset" name="Reset" id="Borrar formulario" />
         </fieldset>
       </form>
-    </div>
+    </div> -->
+
+    <div class="container">
+      <h1 class="titulodeContacto">Contacto</h1>
+
+      <form class="row g-3">
+        <div class="col-md-6">
+          <label for="inputnombre" class="form-label">Nombre</label>
+          <input type="nombre" class="form-control" id="inputnombre">
+        </div>
+        <div class="col-md-6">
+          <label for="inputApellido" class="form-label">Apellido</label>
+          <input type="Apellido" class="form-control" id="inputApellido">
+        </div>
+        <div class="col-12">
+          <label for="inputEmail" class="form-label">Email</label>
+          <input type="Email" class="form-control" id="inputEmail">
+        </div>
+        <div class="col-12">
+          <label for="inputMensaje" class="form-label">Mensaje</label>
+          <input type="Mensaje" class="form-control" id="inputMensaje">
+        </div>
+        <div class="col-12">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="gridCheck">
+            <label class="form-check-label" for="gridCheck">
+              Acepto los términos y condiciones
+            </label>
+          </div>
+        </div>
+        <div class="col-12">
+          <button type="submit" class="btn btn-primary">Enviar</button>
+        </div>
+      </form>
+    </select>
+  </div>
 
     <footer class="footer">
       <div class="container d-flex flex-wrap justify-content-between align-items-center py-4 my-4">
