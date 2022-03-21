@@ -4,44 +4,6 @@
   padding: 0rem 0rem 1rem 0rem;
 }
 
-.formulario {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  border: none;
-  overflow: hidden;
-  margin: 0 auto;
-  align-items: center;
-  div {
-    margin: 8px 0px;
-    width: 40%;
-  }
-}
-
-.form_input {
-  display: flex;
-  justify-content: space-between;
-  input {
-    line-height: 25px;
-    width: 80%;
-  }
-}
-
-#Talles,
-#Mensaje {
-  line-height: 25px;
-  width: 80%;
-}
-
-.genero {
-  display: flex;
-  flex-direction: row;
-  label {
-    margin: 8px 0px;
-  }
-}
-
 .radio {
   margin: 8px 10px 8px 80px;
 }

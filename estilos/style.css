@@ -43,11 +43,21 @@ body {
   padding: 0rem 0rem 1rem 0rem;
 }
 
+.container-boton {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .btn {
   height: 5rem;
-  width: 100%;
+  width: 20rem;
   margin: 10px;
   background-color: #e2d7fa !important;
+  border: none !important;
 }
 
 .btn .btn__text {
@@ -68,67 +78,6 @@ body {
   padding: 0rem 0rem 1rem 0rem;
 }
 
-.formulario {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  border: none;
-  overflow: hidden;
-  margin: 0 auto;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.formulario div {
-  margin: 8px 0px;
-  width: 40%;
-}
-
-.form_input {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.form_input input {
-  line-height: 25px;
-  width: 80%;
-}
-
-#Talles,
-#Mensaje {
-  line-height: 25px;
-  width: 80%;
-}
-
-.genero {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-}
-
-.genero label {
-  margin: 8px 0px;
-}
-
 .radio {
   margin: 8px 10px 8px 80px;
 }
@@ -143,7 +92,8 @@ body {
 /*ESTILOS DE PORTFOLIO*/
 .titulodePortfolio {
   color: #372086;
-  padding-bottom: 0.5rem;
+  padding-bottom: 1rem;
+  margin: 0;
 }
 
 .espaciodetabla,
@@ -153,12 +103,10 @@ table td {
   font-size: 18px;
 }
 
-.experiencia {
-  padding-bottom: 2rem;
-}
-
-.img-responsive {
-  padding: 1rem 0;
+.descripcion {
+  color: #372086;
+  padding: 1rem 1rem 1rem 0rem;
+  margin: 0;
 }
 
 .embalaje {
@@ -169,6 +117,16 @@ table td {
 .titulodeFotografia {
   color: #372086;
   padding: 0rem 0rem 1rem 0rem;
+}
+
+.carousel {
+  padding-bottom: 2rem;
+}
+
+.rowcarousel {
+  -webkit-box-pack: center !important;
+      -ms-flex-pack: center !important;
+          justify-content: center !important;
 }
 
 /*ESTILOS DE SOBRE MI*/
@@ -191,15 +149,16 @@ table td {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 /*ESTILOS DE ILUSTRACIONES*/
 .titulodeilustracion {
   color: #372086;
-  padding-bottom: 0.5rem;
+  padding-bottom: 1rem;
+  margin: 0%;
 }
 
 .row {
@@ -226,7 +185,6 @@ img {
 
 /* HEADER */
 header {
-  padding: 0.5rem 0;
   position: -webkit-sticky;
   position: sticky;
   top: 0;
@@ -259,7 +217,7 @@ header {
 
 /* NAVBAR */
 .navbar-brand img {
-  height: 100px;
+  height: 6rem;
 }
 
 .nav-link {
@@ -275,7 +233,7 @@ header {
 
 .redes {
   padding-top: 0.3rem;
-  padding-left: 3rem;
+  padding-left: 1rem;
 }
 
 .navbar-collapse {
@@ -286,29 +244,67 @@ header {
 }
 
 .navbar-expand-md .navbar-nav .nav-link {
-  padding-left: 3rem !important;
+  padding-left: 1.5rem !important;
 }
 
 .nav-custom {
   background: white;
 }
 
+.navbar {
+  padding: none !important;
+}
+
 /*ESTILOS DE FOOTER*/
 .footer {
   background: -webkit-gradient(linear, left top, left bottom, from(#e2d7fa), to(#372086));
   background: linear-gradient(to bottom, #e2d7fa, #372086);
-  width: 100%;
   position: -webkit-sticky;
   position: sticky;
   bottom: 0;
-  height: 100px;
-  margin-top: 20px;
+  width: 100%;
+  height: 6rem;
+  margin-top: 1rem !important;
 }
 
 .footer_li {
   color: white;
   text-decoration: none;
   text-align: center;
+}
+
+.footer-text {
+  padding-top: 2rem;
+}
+
+.redes-footer {
+  padding: 0.15rem 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.content {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
+}
+
+.footer {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
 }
 
 /*ANIMACIONES*/

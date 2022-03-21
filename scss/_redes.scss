@@ -4,11 +4,17 @@
   padding: 0rem 0rem 1rem 0rem;
 }
 
+.container-boton {
+  display: flex;
+  justify-content: center;
+}
+
 .btn {
   height: 5rem;
-  width: 100%;
+  width: 20rem;
   margin: 10px;
   background-color: #e2d7fa !important;
+  border: none !important;
   .btn__text {
     line-height: 4rem;
     vertical-align: middle;

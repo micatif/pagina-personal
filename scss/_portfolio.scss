@@ -1,7 +1,8 @@
 /*ESTILOS DE PORTFOLIO*/
 .titulodePortfolio {
   color: #372086;
-  padding-bottom: 0.5rem;
+  padding-bottom: 1rem;
+  margin: 0;
 }
 
 .espaciodetabla,
@@ -11,12 +12,10 @@ table td {
   font-size: 18px;
 }
 
-.experiencia {
-  padding-bottom: 2rem;
-}
-
-.img-responsive {
-  padding: 1rem 0;
+.descripcion {
+  color: #372086;
+  padding: 1rem 1rem 1rem 0rem;
+  margin: 0;
 }
 
 .embalaje {
